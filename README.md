@@ -4,7 +4,7 @@ Monitor file update.
 
 ## Usage
 
-    (require 'hozumi.polling-config :as pooling)
+    (require 'hozumi.polling-config :as polling)
 
     (future (polling/run "conf.yaml" 60000));;60 sec interval
 

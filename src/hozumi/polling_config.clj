@@ -16,6 +16,6 @@
 	    (ref-set last-modified current-last-modified)
 	    (ref-set config (-> file slurp yaml/parse-string))
 	    (when callback
-	      (callback))))
+	      (callback @config))))
 	 (Thread/sleep interval-msec)
 	 (recur file)))))
