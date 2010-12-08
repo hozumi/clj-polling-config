@@ -10,9 +10,9 @@
 (defn set
   ([f]
      (dosync
-      (ref-set file (javaio/file f)))
+      (ref-set file (javaio/file f))
       (ref-set last-modified (.lastModified @file))
-      (ref-set config (-> @file slurp yaml/parse-string))))
+      (ref-set config (-> @file slurp yaml/parse-string)))))
 
 (defn run
   ([interval-msec]
