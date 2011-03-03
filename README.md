@@ -13,7 +13,7 @@ Monitor file update.
 
 ## Instalation
 Leiningen
-    [org.clojars.hozumi/clj-polling-config "1.0.0"]
+    [org.clojars.hozumi/clj-polling-config "1.0.1"]
 
 ## License
 

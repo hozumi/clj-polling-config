@@ -1,10 +1,12 @@
-(ns hozumi.polling-config)
+(ns hozumi.polling-config
+  (:require [clojure.java.io :as javaio]))
 
 (defn run-background
   ([file interval-msec]
      (run-background file interval-msec nil))
   ([file interval-msec callback]
-     (let [last-modified (ref 0)
+     (let [file (javaio/file file)
+           last-modified (ref 0)
            config (ref nil)]
        (future
         (loop []
