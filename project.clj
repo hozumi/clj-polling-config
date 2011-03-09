@@ -1,4 +1,4 @@
-(defproject org.clojars.hozumi/clj-polling-config "1.0.1"
+(defproject org.clojars.hozumi/clj-polling-config "1.0.2"
   :description "Monitoring update of config file"
   :dependencies [[org.clojure/clojure "1.2.0"]
                  [org.clojure/clojure-contrib "1.2.0"]]
