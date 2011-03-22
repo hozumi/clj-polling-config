@@ -1,6 +1,8 @@
-(ns org.clojars.hozumi.clj-polling-config.test.core
-  (:use [org.clojars.hozumi.clj-polling-config.core] :reload)
+(ns hozumi.clj-polling-config.test.core
+  (:use [hozumi.polling-config] :reload)
   (:use [clojure.test]))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(deftest test-polling
+  (let [c (run-background "test/config.clj" 500)]
+    (Thread/sleep 1000)
+    (is (= {:Hello "World"} @c))))
