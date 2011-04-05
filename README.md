@@ -18,7 +18,7 @@ passing ref
     
 ## Instalation
 Leiningen
-    [org.clojars.hozumi/clj-polling-config "1.0.3"]
+    [org.clojars.hozumi/clj-polling-config "1.0.4"]
 
 ## License
 
